@@ -40,6 +40,11 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+$('.hamburger-menu').click( function() {
+    $('.nav-menu-links').toggleClass('active');
+    $(this).toggleClass('active');
+});
+
 
 $('.tab-02-link').click( function() {
     $(this).siblings().removeClass('w--current');

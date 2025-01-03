@@ -4668,7 +4668,7 @@ blockquote {
 
 .swiper {
   width: 100%;
-  height: 100%;
+/*  height: 100%;*/
 }
 
 .left-arrow-icon {
@@ -8611,8 +8611,27 @@ blockquote {
     grid-row-gap: 1rem;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: all 500ms ease;
+  }
+  .nav-menu-links.active{
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+    transition: all 500ms ease;
+  }
+  .hamburger-menu.active .menu-bar:nth-child(2) {
+      transform: translateX(100px);
+       transition: all 500ms ease;
   }
 
+  .hamburger-menu.active .menu-bar:first-child {
+      transform: rotate(45deg) translate(7px, 7px);
+       transition: all 500ms ease;
+  }
+
+  .hamburger-menu.active .menu-bar:last-child {
+      transform: rotate(-45deg) translate(4px, -4px);
+       transition: all 500ms ease;
+  }
   .navbar-logo {
     width: 130px;
   }
