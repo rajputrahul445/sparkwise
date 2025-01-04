@@ -5105,7 +5105,7 @@ blockquote {
   display: flex;
 }
 
-.horizontal-line {
+.bottom-border-line {
   background-color: var(--color--night-blue);
   height: 1px;
 }
@@ -5955,7 +5955,10 @@ blockquote {
   padding: 1rem;
   display: flex;
 }
-
+.blog-item-link-block:hover .blog-item-image-wrap img{
+  transform: scale(1.15);
+  transition: all 500ms ease;
+}
 .blog-item-link-block.w--current {
   padding-right: 1rem;
 }
@@ -5996,6 +5999,8 @@ blockquote {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transform: scale(1);
+  transition: all 500ms ease;
 }
 
 .section-blog-post-hero {
@@ -6140,6 +6145,7 @@ blockquote {
 
 .button-text-anim {
   position: absolute;
+  transition: all 500ms ease;
 }
 
 .button-inner-text-wrap {
@@ -6166,12 +6172,13 @@ blockquote {
   right: 0;
 }
 
-.nav-text-link-2 {
+.navLink-2 {
   color: var(--color--black-900);
   position: absolute;
+  transition: all 500ms ease;
 }
 
-.nav-text-link-2:hover {
+.navLink-2:hover {
   color: var(--color--primary-color);
 }
 
@@ -6235,26 +6242,44 @@ blockquote {
   display: flex;
 }
 
-.nav-text-link {
+.navLink {
   color: var(--color--black-900);
   padding: 0;
   transition: color .35s;
   display: block;
+  transform: translateY(0px);
+  transition: all 500ms ease;
 }
 
-.nav-text-link:hover {
+.navLink:hover {
   color: var(--color--primary-color);
 }
+.nav-menu-links .navOverflow:hover .navLink-2,
+.button:hover .button-text-anim {
+    transform: translateY(-25px);
+    transition: all 500ms ease;
+}
 
-.nav-text-link.mega-menu-text {
+.nav-menu-links .navOverflow:hover .navLink,
+.button:hover .button-text {
+    transform: translateY(-25px);
+    transition: all 500ms ease;
+}
+.button-text {
+    transition: all 500ms ease;
+}
+
+
+
+.navLink.mega-menu-text {
   padding: 0;
 }
 
-.nav-text-link.nav-text {
+.navLink.nav-text {
   color: var(--color--primary-color);
 }
 
-.nav-text-link.nav-text.nav-button {
+.navLink.nav-text.nav-button {
   color: var(--color--night-blue);
 }
 
@@ -6298,26 +6323,26 @@ blockquote {
   display: grid;
 }
 
-.nav-link-text-wrap {
+.navOverflow {
   position: relative;
   overflow: hidden;
 }
 
-.nav-link-text-wrap.log-in {
+.navOverflow.log-in {
   border: 1px solid var(--color--primary-color);
   color: var(--color--primary-color);
   border-radius: 100rem;
   padding: 5px 16px;
 }
 
-.nav-link-text-wrap.log-in.nav-button {
+.navOverflow.log-in.nav-button {
   border-color: var(--color--night-blue);
   color: var(--color--night-blue);
   padding-top: 6px;
   padding-bottom: 6px;
 }
 
-.nav-link-text-wrap.log-in.nav-button:hover {
+.navOverflow.log-in.nav-button:hover {
   background-color: var(--color--pink);
   color: var(--color--white);
 }
@@ -8064,7 +8089,7 @@ blockquote {
     transform: translate(0, -160%);
   }
 
-  .nav-text-link {
+  .navLink {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -8073,7 +8098,7 @@ blockquote {
     grid-template-columns: 1.5fr 1.5fr;
   }
 
-  .nav-link-text-wrap.log-in {
+  .navOverflow.log-in {
     display: none;
   }
 

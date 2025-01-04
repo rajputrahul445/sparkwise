@@ -52,6 +52,6 @@ $('.tab-02-link').click( function() {
 });
 
 $('.faq-item').click( function() {
-    $(this).siblings().removeClass('active');
-    $(this).addClass('active');
+    // $(this).siblings().removeClass('active');
+    $(this).toggleClass('active');
 });
