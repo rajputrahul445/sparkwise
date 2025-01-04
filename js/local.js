@@ -55,3 +55,15 @@ $('.faq-item').click( function() {
     // $(this).siblings().removeClass('active');
     $(this).toggleClass('active');
 });
+$('#tab-1').click( function() {
+    $('#w-tabs-0-data-w-pane-1').siblings().removeClass('w--tab-active');
+    $('#w-tabs-0-data-w-pane-1').addClass('w--tab-active');
+});
+$('#tab-2').click( function() {
+    $('#w-tabs-0-data-w-pane-2').siblings().removeClass('w--tab-active');
+    $('#w-tabs-0-data-w-pane-2').addClass('w--tab-active');
+});
+$('#tab-3').click( function() {
+    $('#w-tabs-0-data-w-pane-3').siblings().removeClass('w--tab-active');
+    $('#w-tabs-0-data-w-pane-3').addClass('w--tab-active');
+});
