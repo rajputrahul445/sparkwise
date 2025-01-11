@@ -3360,7 +3360,7 @@ h1 {
   text-transform: capitalize;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 1.25;
 }
@@ -9109,7 +9109,7 @@ section.selftOwned {
 img.bannerBottomImg {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -35%;
     z-index: -1;
     width: 100%;
     opacity: 0.7;
@@ -9117,7 +9117,8 @@ img.bannerBottomImg {
 
 section.homeBanner {
     position: relative;
-    padding: 10px 0 90px;
+    padding: 0 0 70px;
+    overflow: hidden;
 }
 
 .searchBox h6 {
