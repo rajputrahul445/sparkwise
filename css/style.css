@@ -9129,7 +9129,240 @@ section.homeBanner {
     max-width: 200px;
 }
 
+section.inrBanner {
+    text-align: center;
+}
 
+.tabList ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    padding: 5px;
+    background: #06072e;
+    border-radius: 10px;
+}
+
+.pricingTab {
+    display: flex;
+    padding: 0 25px;
+    border: solid 2px #06072e;
+    border-radius: 10px;
+}
+
+.tbWrp {
+    width: calc(100% - 350px);
+    border-right: solid 2px #06072e;
+    padding: 25px;
+    padding-left: 0;
+}
+
+.tabList ul li {
+    width: 33.33%;
+    text-align: center;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tabList ul li h3 {
+    margin: 0;
+    color: #fff;
+}
+.tabList ul li.active {
+    background: #fff;
+}
+
+.tabList ul li.active h3, .tabList ul li.active span {
+    color: #000;
+}
+.tabContentWrp {
+    padding-top: 30px;
+}
+
+.contentWoto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+span.marketing-typo {
+    font-size: 19px;
+    font-weight: 700;
+    color: #000;
+}
+
+.switchButton input {
+    display: none;
+}
+
+.switchButton label {
+    width: 60px;
+    height: 35px;
+    background: #858585;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+.switchButton label:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+    transition: all 500ms ease;
+}
+
+.switchButton input:checked ~ label:after {
+    left: auto;
+    right: 4px;
+    transition: all 500ms ease;
+}
+
+.switchButton input:checked ~ label {
+    background: #06072e;
+    transition: all 500ms ease;
+}
+.tabContent{
+  display: none;
+}
+.tabContent.active{
+  display: block;
+}
+
+.addFields {
+    display: flex;
+    gap: 10px;
+    margin: 0 0 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.addFields .form-group.qtyCLsWrp {/* width: 80px; */}
+
+.addFields .form-group {
+    width: calc(100%/2 - 50px);
+}
+
+.qtyCLs {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+}
+.addFields.added-row {
+    align-items: center;
+}
+
+.addmore {
+    color: #fff;
+    border: none;
+    padding: 4px 15px;
+    border-radius: 4px;
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.addmore {
+    background: #00cb00;
+}
+.fullWidth {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.qtyCLs span {
+    padding: 1px 6px;
+    background: #f1f1f1;
+    font-size: 22px;
+    display: block;
+    cursor: pointer;
+}
+.removeBtn img, .addmore img {
+    width: 10px;
+}
+.margin-top {
+    margin-top: 2rem;
+}
+.addFields.added-row {
+    position: relative;
+    margin: 0;
+}
+
+button.removeBtn {
+    background: #d33737;
+    position: absolute;
+    top: 10px;
+    right: -15px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.graph {
+    width: 350px;
+    padding: 25px;
+    position: relative;
+    min-height: 500px;
+}
+.graphWrp {
+    height: 300px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: end;
+}
+
+.chartHeight {
+    height: 100%;
+    width: 30px;
+    background: #5fcc34;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    opacity: 0.8;
+    border-radius: 5px 5px 0 0;
+}
+.chartHeight:hover{
+  opacity: 1;
+}
+
+.chartLabel {
+    font-size: 15px;
+}
+.chartLegend {
+    text-align: center;
+}
+
+.graphWrp:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #00000036;
+    bottom: 35px;
+}
+.graph button.button.w-block {
+    width: calc(100% - 25px);
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
 
 
 
@@ -9159,5 +9392,45 @@ section.homeBanner {
 
   .firstCol {
       width: 100%;
+  }
+  .tbWrp, .graph {
+      width: 100%;
+  }
+
+  .pricingTab {
+      flex-wrap: wrap;
+      padding: 0 15px;
+  }
+
+  .tbWrp {
+      padding-right: 0;
+      border-bottom: solid 2px #06072e;
+      border-right: none;
+  }
+
+  .addFields, .addFields.added-row {
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+  }
+
+  .addFields .form-group {
+      width: 100%;
+  }
+
+  button.removeBtn {
+      right: -15px;
+      top: -21px;
+  }
+
+  .tabList ul li h3 {
+      font-size: 18px;
+  }
+
+  .tabList ul li {
+      padding: 10px;
+  }
+
+  .tabList ul li span {
+      font-size: 12px;
   }
 }
