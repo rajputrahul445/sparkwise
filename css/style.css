@@ -5422,6 +5422,7 @@ blockquote {
   grid-row-gap: .5rem;
   flex-flow: column;
   display: flex;
+  grid-area: span 1 / span 2 / span 1 / span 2;
 }
 
 .contact-input {
@@ -9089,6 +9090,7 @@ section.selftOwned {
     width: 55%;
     margin-top: 20px;
     margin: 20px auto;
+    text-align: center;
 }
 
 .searchBox > img {
@@ -9101,9 +9103,7 @@ section.selftOwned {
     color: #ddd;
 }
 .searchBox button.button {
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin: 0 auto 20px;
 }
 
 img.bannerBottomImg {
@@ -9363,6 +9363,82 @@ button.removeBtn {
     left: 25px;
     bottom: 25px;
 }
+.navbar-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img.side-navbar-logo {
+    width: 70px;
+    padding-right: 10px;
+    border-right: solid 1px #000;
+}
+.inlineBtn .button.w-inline-block {
+    display: inline-block;
+}
+
+.inlineBtn {
+    text-align: center;
+}
+.testimonial-text {
+    min-height: 220px;
+}
+.addComonentWrp {
+    display: flex;
+    gap: 15px;
+    background: #3a34ba;
+    padding: 20px 20px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.addComonentWrp .form-group {
+    width: 100%;
+    text-align: center;
+}
+
+.plainText {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px #ccc;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+.addComonent {
+    margin-top: 80px;
+}
+
+.addComonent h4 {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 30px;
+}
+
+.plainText::placeholder {
+    color: #fff;
+}
+
+.addComonentWrp .button {
+    background: #fff;
+    color: #000;
+    margin: 0 auto;
+}
+.inlineBtnSml{
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -9434,3 +9510,13 @@ button.removeBtn {
       font-size: 12px;
   }
 }
+
+@media only screen and (max-width:767px){
+  .addComonentWrp {
+    flex-wrap: wrap;
+  }
+}
+
+
+
+
